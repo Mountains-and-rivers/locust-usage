@@ -168,5 +168,29 @@ win 11 启动master模式 报错，把pysmq版本降低 即可解决 参考：
 https://github.com/locustio/locust/issues/2058
 ```
 
+# python 编译安装
 
+```
+1，解压缩Python-3.7.3.tgz文件
+
+ 运行以下命令：
+
+ tar -xzvf Python-3.7.3.tgz,2，建立一个编译目录：
+
+mkdir /usr/local/python3
+
+3、安装依赖包
+
+通常情况下，在CentOS下安装Python 3.7序列版本还需要下面的的依赖包：
+
+ yum install -y libffi-devel zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel zlib zlib-devel gcc make
+
+4、编译和安装Python-3.7.3.tgz
+
+ cd Python-3.7.3
+
+./configure --prefix=/usr/local/bin/python3
+make
+make install
+```
 
