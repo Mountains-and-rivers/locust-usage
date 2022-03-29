@@ -192,5 +192,7 @@ mkdir /usr/local/python3
 ./configure --prefix=/usr/local/bin/python3
 make
 make install
+rm -rf /usr/bin/python3
+ln -s /usr/local/bin/python3/bin/python3 /usr/bin/python3
 ```
 
